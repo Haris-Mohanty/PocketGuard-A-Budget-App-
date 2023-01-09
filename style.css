@@ -86,3 +86,36 @@ body{
   transform: translateY(-7px);
   letter-spacing: 1.1px;
 }
+.second-part{
+  border-left: 5px solid #d818a5;
+  color: #4c0dde;
+  font-weight: bold;
+}
+.second-part p{
+  color: #6b10f4;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.second-part-2{
+  border-left: 5px solid #d818a5;
+}
+.second-part-3{
+  border-left: 5px solid #d818a5;
+  border-right: 5px solid #d818a5;
+}
+.last-part-code{
+  border-top: 4px solid #c10657;
+}
+.last-part-code h4{
+  color: #6c278b;
+}
+.fa-solid{
+  color: #9b0329;
+  font-size: 22px;
+  padding-left: 44px;
+  cursor: pointer;
+}
+.fa-pen-to-square{
+  color: blue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
