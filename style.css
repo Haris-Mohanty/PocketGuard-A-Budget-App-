@@ -18,7 +18,7 @@ body{
   margin-top: 5px;
 }
 .first-box-ist{
-  background-color: #bfe9ff ;
+/*   background-color: #bfe9ff ; */
 }
 .first-box-ist label{
   color: #ac2de6;
@@ -32,39 +32,27 @@ body{
   cursor: pointer;
 }
 .first-box-ist button{
-  background: rgb(22,9,240);
-background: linear-gradient(0deg, rgba(22,9,240,1) 0%, rgba(49,110,244,1) 100%);
-  color: #fff;
+  background-color: aqua;
+  margin: 2px 0 0 37%;
+  font-size: 16px;
+  padding: 12px;
   border: none;
-  transition: all 0.3s ease;
-  overflow: hidden;
-  position: relative;
-}
-.first-box-ist button:after{
-  position: absolute;
-  content: " ";
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 10%;
-  height: 10%;
-  transition: all 0.3s ease;
-  -webkit-transform: scale(.1);
-  transform: scale(.1);
+  border-radius: 10px;
+  color: #ac2de6;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out 0s;
+  box-shadow: 9px 9px 24px rgb(42, 220, 244, 0.64);
 }
 .first-box-ist button:hover {
-  color: #fff;
-  border: none;
-  background: transparent;
-}
-.first-box-ist button:hover:after {
-  background: rgb(0,3,255);
-background: linear-gradient(0deg, rgba(2,126,251,1) 0%,  rgba(0,3,255,1)100%);
-  -webkit-transform: scale(1);
-  transform: scale(1);
+  color: #0874e7;
+  background: linear-gradient( #11eec9, #e6e8e3);
+  transform: translateY(-7px);
+  box-shadow: 12px 12px 24px rgb(21, 209, 146, 0.64);
 }
 .first-box-2nd{
-  background-color: #bfe9ff ;
+/*   background-color: #bfe9ff ; */
 }
 .first-box-2nd label{
   color: #ac2de6;
@@ -79,6 +67,7 @@ background: linear-gradient(0deg, rgba(2,126,251,1) 0%,  rgba(0,3,255,1)100%);
 }
 .first-box-2nd button{
   background-color: aqua;
+  box-shadow: 6px 6px 24px rgb(21, 222, 249, 0.64);
   margin: 2px 0 0 61%;
   font-size: 16px;
   padding: 12px;
@@ -88,4 +77,12 @@ background: linear-gradient(0deg, rgba(2,126,251,1) 0%,  rgba(0,3,255,1)100%);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   cursor: pointer;
+  transition: all 0.5s ease-in-out 0s;
+}
+.first-box-2nd button:hover {
+  color: #f109bf;
+  background: linear-gradient( #6bc9eb, #23D5AB, #e6e8e3);
+  box-shadow: 12px 12px 24px rgb(40, 240, 190, 0.64);
+  transform: translateY(-7px);
+  letter-spacing: 1.1px;
 }
