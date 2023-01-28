@@ -12,5 +12,6 @@ const setBudgetFun = () => {
     swal("Input Field Empty!", "Please Enter a Budget !", "warning");
   }
 };
+
 //END SET BUDGET CODE
 //
