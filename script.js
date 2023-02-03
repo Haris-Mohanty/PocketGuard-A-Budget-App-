@@ -27,5 +27,19 @@ all_data();
 let product_btn = document.getElementById("product-btn");
 let title = document.getElementById("title");
 let cost = document.getElementById("cost");
-
+product_btn.onclick = function(e){
+  e.preventDefault();
+  if(title.value != "" && cost.value != ""){
+    let p_title = title.value;
+    let p_cost = cost.value;
+    let data = {p_cost : p_cost,
+                p_title : p_title
+                };
+    let string = JSON.stringify(data);
+    localStorage.setItem("budget_"+title.value, string);
+    
+  }else{
+    swal("Input Field Empty!", "Please fill the Details !", "warning");
+  }
+}
 //SET EXPENSES CODE END
