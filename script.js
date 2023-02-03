@@ -6,7 +6,8 @@ budgetBtn.addEventListener("click", () => {
 });
 const setBudgetFun = () => {
   if(setBudget.value != ""){
-    localStorage.setItem("button",setBudget.value);
+    localStorage.setItem("budget",setBudget.value);
+    location.href = location.href;
   }else{
     swal("Input Field Empty!", "Please Enter a Budget !", "warning");
   }
@@ -16,6 +17,8 @@ const setBudgetFun = () => {
 //GET DATA FROM LOCALSTORAGE CODE START
 let totalBudget = document.getElementById("total-budget");
 
-
-
+function all_data(){
+ totalBudget.innerHTML = localStorage.getItem("budget");
+}
+all_data();
 //GET DATA FROM LOCALSTORAGE CODE END
