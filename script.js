@@ -1,7 +1,6 @@
 //START SET BUDGET CODE
 let setBudget = document.getElementById("set-budget");
 let budgetBtn = document.getElementById("budget-btn");
-let totalBudget = document.getElementById("total-budget");
 budgetBtn.addEventListener("click", () => {
   setBudgetFun();
 });
@@ -12,6 +11,11 @@ const setBudgetFun = () => {
     swal("Input Field Empty!", "Please Enter a Budget !", "warning");
   }
 };
-
 //END SET BUDGET CODE
-//
+
+//GET DATA FROM LOCALSTORAGE CODE START
+let totalBudget = document.getElementById("total-budget");
+
+
+
+//GET DATA FROM LOCALSTORAGE CODE END
