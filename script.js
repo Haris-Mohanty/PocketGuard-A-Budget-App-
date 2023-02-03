@@ -18,6 +18,10 @@ const setBudgetFun = () => {
 let totalBudget = document.getElementById("total-budget");
 
 function all_data(){
+  let i;
+  for(i=0; i<localStorage.length; i++){
+    
+  }
  totalBudget.innerHTML = localStorage.getItem("budget");
 }
 all_data();
