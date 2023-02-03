@@ -22,3 +22,10 @@ function all_data(){
 }
 all_data();
 //GET DATA FROM LOCALSTORAGE CODE END
+
+//SET EXPENSES CODE START
+let product_btn = document.getElementById("product-btn");
+let title = document.getElementById("title");
+let cost = document.getElementById("cost");
+
+//SET EXPENSES CODE END
