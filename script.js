@@ -20,7 +20,26 @@ let totalBudget = document.getElementById("total-budget");
 function all_data(){
   let i;
   for(i=0; i<localStorage.length; i++){
-    
+    let all_keys = localStorage.key(i);
+    if(all_keys.match("budget_")){
+      let json_data = localStorage.getItem(all_keys);
+      let json_parse = JSON.parse(json_data);
+      
+      let expense_list = document.getElementById("expense-list");
+    expense_list.innerHTML += `
+    <div class="row last-part-code">
+          <div class="col-md-6 mt-3 d-flex justify-content-between">
+            <h4>x</h4>
+            <h4>20</h4>
+          </div>
+          <div class="col-md-6 mt-3 d-flex justify-content-end">
+            <i class="fa-solid fa-pen-to-square mx-3"></i>
+            <i class="fa-solid fa-trash"></i>
+          </div>
+        </div>
+      </div>
+    `;
+    }
   }
  totalBudget.innerHTML = localStorage.getItem("budget");
 }
@@ -31,6 +50,7 @@ all_data();
 let product_btn = document.getElementById("product-btn");
 let title = document.getElementById("title");
 let cost = document.getElementById("cost");
+
 product_btn.onclick = function(e){
   e.preventDefault();
   if(title.value != "" && cost.value != ""){
@@ -41,7 +61,7 @@ product_btn.onclick = function(e){
                 };
     let string = JSON.stringify(data);
     localStorage.setItem("budget_"+title.value, string);
-    
+    location.href = location.href;
   }else{
     swal("Input Field Empty!", "Please fill the Details !", "warning");
   }
