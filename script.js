@@ -29,7 +29,7 @@ function all_data(){
     expense_list.innerHTML += `
     <div class="row last-part-code">
           <div class="col-md-6 mt-3 d-flex justify-content-between">
-            <h4>x</h4>
+            <h4>${json_parse.p_title}</h4>
             <h4>20</h4>
           </div>
           <div class="col-md-6 mt-3 d-flex justify-content-end">
