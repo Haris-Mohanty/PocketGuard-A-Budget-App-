@@ -27,17 +27,16 @@ function all_data(){
       
       let expense_list = document.getElementById("expense-list");
     expense_list.innerHTML += `
-    <div class="row last-part-code">
-          <div class="col-md-6 mt-3 d-flex justify-content-between">
+      <div class="row last-part-code">
+        <div class="col-md-6 mt-3 d-flex justify-content-between">
             <h4>${json_parse.p_title}</h4>
             <h4>${json_parse.p_cost}</h4>
-          </div>
-          <div class="col-md-6 mt-3 d-flex justify-content-end">
+        </div>
+         <div class="col-md-6 mt-3 d-flex justify-content-end">
             <i class="fa-solid fa-pen-to-square mx-3"></i>
             <i class="fa-solid fa-trash"></i>
-          </div>
-        </div>
-      </div>
+         </div>
+       </div>
     `;
     }
   }
