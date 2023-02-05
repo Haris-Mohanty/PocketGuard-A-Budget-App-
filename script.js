@@ -34,7 +34,7 @@ function all_data(){
         </div>
          <div class="col-md-6 mt-3 d-flex justify-content-end">
             <i class="fa-solid fa-pen-to-square mx-3"></i>
-            <i class="fa-solid fa-trash"></i>
+            <i class="fa-solid fa-trash del-btn"></i>
          </div>
        </div>
     `;
@@ -63,6 +63,15 @@ let balance = document.getElementById("balance");
 let t_bgt = totalBudget.innerHTML;
   let t_expense = expense.innerHTML;
   balance.innerHTML = t_bgt-t_expense;
+
+//START DELETE BUTTON CODE
+let del_btn = document.getElementsByName("del-btn");
+  for(i=0; i<del_btn.length; i++){
+    del_btn[i].onclick = function(){
+      let del_parent = this.parentElement.parentElement;
+    }
+  }
+//END DELETE BUTTON CODE
   
 }
 all_data();
@@ -89,3 +98,4 @@ product_btn.onclick = function(e){
   }
 }
 //SET EXPENSES CODE END
+
