@@ -56,8 +56,13 @@ let price_tag = document.getElementsByClassName("price");
   }
   let expense = document.getElementById("expense");
   expense.innerHTML = final_price;
-  
+
  totalBudget.innerHTML = localStorage.getItem("budget");
+  
+let balance = document.getElementById("balance");
+let t_bgt = totalBudget.innerHTML;
+  let t_expense = 
+  
 }
 all_data();
 //GET DATA FROM LOCALSTORAGE CODE END
