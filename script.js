@@ -42,9 +42,20 @@ function all_data(){
   }
 
 let price_tag = document.getElementsByClassName("price");
+  let price =[];
   for(i=0; i<price_tag.length; i++){
-    
+   price[i] = price_tag[i].innerHTML;
   }
+  let price_int = [];
+  for(i=0; i<price.length; i++){
+    price_int.push(parseInt(price[i]));
+  }
+  let final_price = 0;
+  for(i=0; i<price_int.length; i++){
+    final_price += price_int[i];
+  }
+  let expense = document.getElementById("expense");
+  expense.innerHTML = final_price;
   
  totalBudget.innerHTML = localStorage.getItem("budget");
 }
