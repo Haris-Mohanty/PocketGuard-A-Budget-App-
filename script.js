@@ -61,7 +61,8 @@ let price_tag = document.getElementsByClassName("price");
   
 let balance = document.getElementById("balance");
 let t_bgt = totalBudget.innerHTML;
-  let t_expense = 
+  let t_expense = expense.innerHTML;
+  balance.innerHTML = t_bgt-t_expense;
   
 }
 all_data();
