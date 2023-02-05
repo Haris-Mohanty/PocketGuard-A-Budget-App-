@@ -30,7 +30,7 @@ function all_data(){
       <div class="row last-part-code">
         <div class="col-md-6 mt-3 d-flex justify-content-between">
             <h4>${json_parse.p_title}</h4>
-            <h4>${json_parse.p_cost}</h4>
+            <h4 class="price">${json_parse.p_cost}</h4>
         </div>
          <div class="col-md-6 mt-3 d-flex justify-content-end">
             <i class="fa-solid fa-pen-to-square mx-3"></i>
@@ -40,6 +40,12 @@ function all_data(){
     `;
     }
   }
+
+let price_tag = document.getElementsByClassName("price");
+  for(i=0; i<price_tag.length; i++){
+    
+  }
+  
  totalBudget.innerHTML = localStorage.getItem("budget");
 }
 all_data();
