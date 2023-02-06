@@ -65,10 +65,29 @@ let t_bgt = totalBudget.innerHTML;
   balance.innerHTML = t_bgt-t_expense;
 
 //START DELETE BUTTON CODE
-let del_btn = document.getElementsByName("del-btn");
+let del_btn = document.getElementsByClassName("del-btn");
   for(i=0; i<del_btn.length; i++){
     del_btn[i].onclick = function(){
       let del_parent = this.parentElement.parentElement;
+      console.log(del_parent.firstChild.childNodes[0].innerHTML)
+      // swal({
+      //   title: "Are you sure?",
+      //   text: "Once deleted, you will not be able to recover this imaginary file!",
+      //   icon: "warning",
+      //   buttons: true,
+      //   dangerMode: true,
+      // }).then((willDelete) => {
+      //   if (willDelete) {
+      //     del_parent.remove(); //Remove data from page but not local storage
+      //     localStorage.removeItem("budget_"+title.value, string)
+      //     location.href = location.href;
+      //     swal("Poof! Your imaginary file has been deleted!", {
+      //       icon: "success",
+      //     });
+      //   } else {
+      //     swal("Your imaginary file is safe!");
+      //   }
+      // });
     }
   }
 //END DELETE BUTTON CODE
