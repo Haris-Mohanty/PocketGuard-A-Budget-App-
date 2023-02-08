@@ -104,6 +104,8 @@ let del_btn = document.getElementsByClassName("del-btn");
 
       title.value = product_edit;
       cost.value = product_cost_edit;
+      title.focus();
+      product_btn.innerHTML = "Click to Update";
     }
   }
   //END EDIT BUTTON CODE
