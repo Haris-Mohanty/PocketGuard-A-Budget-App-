@@ -106,6 +106,19 @@ let del_btn = document.getElementsByClassName("del-btn");
       cost.value = product_cost_edit;
       title.focus();
       product_btn.innerHTML = "Click to Update";
+
+      
+      product_btn.onclick = function(){
+        localStorage.removeItem("budget_"+product_edit);
+        let p_title = title.value;
+        let p_cost = cost.value;
+        let data = {p_cost : p_cost,
+                p_title : p_title
+                };
+        let string = JSON.stringify(data);
+        localStorage.setItem("budget_"+title.value, string);
+        location.href = location.href;
+      }
     }
   }
   //END EDIT BUTTON CODE
