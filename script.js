@@ -89,7 +89,7 @@ let del_btn = document.getElementsByClassName("del-btn");
           swal("Your imaginary file is safe!");
         }
       });
-      
+      //SWAL end
     }
   }
 //END DELETE BUTTON CODE
@@ -98,7 +98,12 @@ let del_btn = document.getElementsByClassName("del-btn");
   for(i=0; i<edit_btn.length; i++){
     edit_btn[i].onclick = function(){
       let edit_parent = this.parentElement.parentElement;
-      
+      all_edit_h4 = edit_parent.querySelectorAll("H4");
+      let product_edit = all_edit_h4[0].innerHTML;
+      let product_cost_edit = all_edit_h4[1].innerHTML;
+
+      title.value = product_edit;
+      cost.value = product_cost_edit;
     }
   }
   //END EDIT BUTTON CODE
