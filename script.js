@@ -33,7 +33,7 @@ function all_data(){
             <h4 class="price">${json_parse.p_cost}</h4>
         </div>
          <div class="col-md-6 mt-3 d-flex justify-content-end">
-            <i class="fa-solid fa-pen-to-square mx-3"></i>
+            <i class="fa-solid fa-pen-to-square edit-btn mx-3"></i>
             <i class="fa-solid fa-trash del-btn"></i>
          </div>
        </div>
@@ -80,7 +80,8 @@ let del_btn = document.getElementsByClassName("del-btn");
       }).then((willDelete) => {
         if (willDelete) {
           del_parent.remove(); //Remove data from page but not local storage
-          localStorage.removeItem("budget_"+product_name)
+          localStorage.removeItem("budget_"+product_name);
+          location.href = location.href;
           swal("Poof! Your imaginary file has been deleted!", {
             icon: "success",
           });
@@ -92,6 +93,15 @@ let del_btn = document.getElementsByClassName("del-btn");
     }
   }
 //END DELETE BUTTON CODE
+  //START EDIT BUTTON CODE
+  let edit_btn = document.getElementsByClassName("edit-btn");
+  for(i=0; i<edit_btn.length; i++){
+    edit_btn[i].onclick = function(){
+      let edit_parent = this.parentElement.parentElement;
+      
+    }
+  }
+  //END EDIT BUTTON CODE
   
 }
 all_data();
